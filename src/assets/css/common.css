@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html, body, #app {
+    font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica;
+    height: 100%;
+    overflow: hidden;
+}
+
+.float-r{
+    float: right;
+}
+.content-container{
+    padding: 0 12px ;
+    padding-top:20px;
+}
+.lit-title{
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+}
+/**************start of button****/
+.app-btn{
+    background-color: #FF4200;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin: 12px 0;
+
+}
+/****************heder strat************/
+.app-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: 45px;
+    line-height: 45px;
+    font-size: 19px;
+    background: linear-gradient(to bottom, #303036, #3c3b40);
+    color: #ffffff;
+    text-align: center;
+}
+.header-other{
+    float: right;
+}
+.other .tips-menu {
+    position: absolute;
+    z-index: 2;
+    width: 133px;
+    font-size: 16px;
+    right: -10px;
+    top: 54px;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #49484b;
+    padding: 0 15px;
+    -webkit-transform-origin: 90% 0%;
+    transform-origin: 90% 0%;
+}
+.other .tips-menu::before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    content: "";
+    border-width: 0 6px 8px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #49484b rgba(0, 0, 0, 0);
+    border-style: solid;
+}
+.other .tips-menu .iconfont {
+    float: left;
+    font-size: 16px;
+}
+.other .tips-menu .iconfont {
+    margin-right: 15px;
+}
+.tips-open {
+    transition: initial;
+    opacity: 1;
+}
+.tips-close {
+    opacity: 0;
+    transition: .2s opacity ease, .6s transform ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.other .tips-menu li{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+.parentheses:before {
+    content: "(";
+}
+.parentheses:after {
+    content: ")";
+}
+.other{
+    position: absolute;
+    right: 15px;
+}
+
+._cover-top .top-back {
+    max-width: 85px;
+    float: left;
+}
+._cover-top .top-back .iconfont:before {
+    font-size: 20px;
+    vertical-align: middle;
+}
+.icon-return-arrow::before {
+    content: "\E60A";
+}
+/****************heder end************/
+/********footers tart***************/
+
+.app-footer ._news-count {
+    left: 100%;
+    margin-left: -10px;
+    right: initial;
+}
+._news-dot {
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    background-color: red;
+    background-color: #f43531;
+    font-size: 0;
+}
+._news-count {
+    position: absolute;
+    font-style: initial;
+    font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica;
+    right: -9px;
+    top: -5px;
+    z-index: 2;
+    padding: 0 4px;
+    width: auto;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 9px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f43531;
+}
+.app-footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+._effect {
+    opacity: 1;
+    transition: .3s all ease;
+}
+.app-footer nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    padding-top: 8px;
+    background: #f9f9f9;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+nav dl {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1;
+        -webkit-box-flex: 1;
+
+
+}
+/********footers end***************/
+/************full screen***/
+.app-content ._full_inner {
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+._scroll {
+    overflow: auto;
+}
+._full_inner {
+    position: relative;
+    height: 100%;
+    z-index: 5;
+}
+.app-content {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+/************full screen end***/
+/**********list *****/
+.component-chat .wechat-list .item {
+    position: relative;
+}
+.component-chat .wechat-list .info {
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    padding: 9px;
+    background-color: #ffffff;
+    transition: .2s transform linear;
+}
+.component-chat .chat-item-transition {
+    height: 64px;
+    transition: .3s height ease;
+}
+
+._line-fine:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    top: 0;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+    z-index: 2;
+}
+.component-chat ._line-fine:before {
+    z-index: 3;
+    left: 8px;
+}
+.component-chat .wechat-list .item:last-child:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    left: 0;
+    z-index: 2;
+    left: 8px;
+    bottom: 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    background-color: #b7b7b7;
+    height: 1px;
+}
+ .wechat-list .info .desc {
+    overflow: hidden;
+    text-align: left;
+}
+.component-chat .wechat-list .item {
+    position: relative;
+}
+
+/**********list *end****/
+
+/**********router full start******/
+._full_router {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+.cover-transition {
+    opacity: 1;
+    transition: .3s all ease;
+}
+/**********router full end******/
+/****************start of anmation***/
+.slide-left-enter, .slide-right-leave-active {
+    opacity:.3;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+     opacity:.3;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.slide-bottom-enter,.slide-bottom-leave-active{
+    opacity:.3;
+     -webkit-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+.slide-menu-enter{
+    opacity:.3;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.slide-menu-leave-active{
+    opacity:0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+/****************end of anmation***/
+/****************start of update-content***/
+.update-content input[type='text']{
+    border: none;
+    border-bottom: 1px solid #FF4200;
+}
+.update-content input ,.update-content button{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+}
+/****************end of update-content***/
